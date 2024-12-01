@@ -1,0 +1,19 @@
+{
+  "name": "@repo/stylelint-config",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "dependencies": {
+    "stylelint": "^16.11.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-config-tailwindcss": "^0.0.7"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
