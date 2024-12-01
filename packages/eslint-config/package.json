@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"type": "module",
 	"exports": {
-		".": "./index.js"
+		".": "./index.js",
+		"./react": "./react/index.js"
 	},
 	"dependencies": {
 		"@eslint/js": "^9.15.0",
@@ -14,6 +15,9 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-import-resolver-typescript": "^3.6.3",
 		"eslint-plugin-import-x": "^4.4.3",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"eslint-plugin-react": "^7.37.2",
+		"eslint-plugin-react-hooks": "^5.0.0",
 		"eslint-plugin-simple-import-sort": "^12.1.1",
 		"eslint-plugin-unused-imports": "^4.1.4",
 		"globals": "^15.12.0",
