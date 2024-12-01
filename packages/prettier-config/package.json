@@ -1,0 +1,16 @@
+{
+	"name": "@repo/prettier-config",
+	"version": "0.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": "./index.js"
+	},
+	"peerDependencies": {
+		"prettier": ">=3.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

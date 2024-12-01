@@ -8,12 +8,15 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"**/*.ts\""
+    "lint": "eslint \"**/*.ts\"",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "@repo/prettier-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "eslint": "^9.16.0",
+    "prettier": "^3.4.1",
     "typescript": "5.7.2"
   }
 }

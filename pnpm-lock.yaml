@@ -27,12 +27,18 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@repo/prettier-config':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       eslint:
         specifier: ^9.16.0
         version: 9.16.0(jiti@1.21.6)
+      prettier:
+        specifier: ^3.4.1
+        version: 3.4.1
       typescript:
         specifier: 5.7.2
         version: 5.7.2
@@ -49,12 +55,18 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@repo/prettier-config':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       eslint:
         specifier: ^9.16.0
         version: 9.16.0(jiti@1.21.6)
+      prettier:
+        specifier: ^3.4.1
+        version: 3.4.1
       typescript:
         specifier: 5.7.2
         version: 5.7.2
@@ -104,6 +116,12 @@ importers:
         specifier: ^8.16.0
         version: 8.16.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
 
+  packages/prettier-config:
+    dependencies:
+      prettier:
+        specifier: '>=3.0.0'
+        version: 3.4.1
+
   packages/typescript-config: {}
 
   packages/ui:
@@ -111,12 +129,18 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
+      '@repo/prettier-config':
+        specifier: workspace:*
+        version: link:../prettier-config
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       eslint:
         specifier: ^9.16.0
         version: 9.16.0(jiti@1.21.6)
+      prettier:
+        specifier: ^3.4.1
+        version: 3.4.1
       typescript:
         specifier: 5.7.2
         version: 5.7.2
