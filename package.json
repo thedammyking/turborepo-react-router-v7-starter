@@ -1,5 +1,9 @@
 {
+	"name": "turborepo-react-router-v7-starter",
   "private": true,
+	"version": "0.0.1",
+	"author": "Oluwadamilola Babalola<kingdammie@gmail.com>",
+	"license": "MIT",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
