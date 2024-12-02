@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "author": "Oluwadamilola Babalola<kingdammie@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -11,6 +12,8 @@
     "prepare": "husky"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
     "eslint": "^9.16.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
