@@ -5,7 +5,7 @@ import globals from 'globals';
 
 import path from 'node:path';
 
-import defaultConfig from '..';
+import defaultConfig from '.';
 
 import tailwind from 'eslint-plugin-tailwindcss';
 

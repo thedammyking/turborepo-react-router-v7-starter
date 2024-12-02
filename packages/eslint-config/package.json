@@ -6,7 +6,7 @@
   "type": "module",
   "exports": {
     ".": "./index.js",
-    "./react": "./react/index.js"
+    "./react": "./react.js"
   },
   "dependencies": {
     "@eslint/js": "^9.15.0",

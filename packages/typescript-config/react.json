@@ -1,23 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./base.json",
+  "extends": ["./base.json", "./vite.json"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "target": "ES6",
     "jsx": "react-jsx",
-    "types": ["vite/client"]
+    "types": ["react", "vite/client"]
   },
-  "include": [
-    "vite.config.ts",
-    "src",
-    "netlify",
-    ".eslintrc.config.js",
-    ".react-router/types/**/*",
-    "vite-env.d.ts",
-    "server",
-    "react-router.config.ts",
-    "tailwind.config.ts"
-  ],
-  "exclude": ["build", "node_modules", ".netlify", ".react-router", "public"]
+  "include": ["src", ".eslintrc.config.js", "vite.config.ts", "vite-env.d.ts", "tailwind.config.ts"]
 }

@@ -6,5 +6,5 @@
     "types": ["vite/client"],
     "target": "ESNext"
   },
-  "include": ["vite.config.ts", "vite-env.d.ts"]
+  "include": ["src", ".eslintrc.config.js", "vite.config.ts", "vite-env.d.ts"]
 }
