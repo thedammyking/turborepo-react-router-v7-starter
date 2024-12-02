@@ -37,3 +37,7 @@ This Turborepo has some additional tools already setup for you:
 - [Prettier](https://prettier.io) for code formatting
 - [Stylelint](https://stylelint.io/) for CSS linting
 - [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Husky](https://typicode.github.io/husky/) for Git hooks
+- [Lint-staged](https://github.com/okonet/lint-staged) for running linters on Git staged files
+- [Commitlint](https://commitlint.js.org/) for commit message linting
+- [Netlify](https://www.netlify.com/) for deployment
