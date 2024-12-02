@@ -107,6 +107,18 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)
 
+  packages/config-tailwind:
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      tailwindcss:
+        specifier: ^3.4.15
+        version: 3.4.15
+
   packages/eslint-config:
     dependencies:
       '@eslint/js':
