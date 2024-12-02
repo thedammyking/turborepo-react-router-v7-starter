@@ -2,7 +2,7 @@
 
 A Turborepo starter template for a React Router v7 application.
 
-## Using this example
+## Using this template
 
 Run the following command:
 
