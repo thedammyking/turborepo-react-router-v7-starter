@@ -1,5 +1,12 @@
 {
-  "extends": "@repo/typescript-config",
-  "include": ["."],
-  "exclude": ["node_modules"]
+  "extends": "@repo/typescript-config/react",
+  "compilerOptions": {
+    "types": ["react"],
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["src/*"]
+    }
+  },
+  "include": ["src", "tailwind.config.ts"],
+  "exclude": [".turbo", "node_modules"]
 }

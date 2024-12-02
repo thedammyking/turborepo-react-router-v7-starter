@@ -3,13 +3,9 @@ import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 
-import path from 'node:path';
-
 import defaultConfig from '.';
 
 import tailwind from 'eslint-plugin-tailwindcss';
-
-const tailwindConfig = path.resolve(process.cwd(), 'tailwind.config.ts');
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -85,7 +81,7 @@ export default [
     settings: {
       tailwindcss: {
         callees: ['cn', 'classnames', 'clsx', 'ctl'],
-        config: tailwindConfig,
+        config: './tailwind.config.ts',
         removeDuplicates: true
       }
     }

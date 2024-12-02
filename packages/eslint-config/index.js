@@ -7,10 +7,6 @@ import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import tsEslint from 'typescript-eslint';
 
-import path from 'node:path';
-
-const project = path.resolve(process.cwd(), 'tsconfig.json');
-
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   // Ignore
@@ -58,7 +54,7 @@ export default [
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        project: './tsconfig.json'
+        project: true
       }
     },
     rules: {
@@ -146,7 +142,7 @@ export default [
       'import/resolver': {
         typescript: {
           alwaysTryTypes: true,
-          project
+          project: true
         },
         node: {
           extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx']
