@@ -2,7 +2,14 @@ import jsxA11y from 'eslint-plugin-jsx-a11y';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import globals from 'globals';
+
+import path from 'node:path';
+
 import defaultConfig from '..';
+
+import tailwind from 'eslint-plugin-tailwindcss';
+
+const tailwindConfig = path.resolve(process.cwd(), 'tailwind.config.ts');
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -70,5 +77,17 @@ export default [
   },
 
   // JSX A11y
-  jsxA11y.flatConfigs.recommended
+  jsxA11y.flatConfigs.recommended,
+
+  // Tailwind
+  ...tailwind.configs['flat/recommended'],
+  {
+    settings: {
+      tailwindcss: {
+        callees: ['cn', 'classnames', 'clsx', 'ctl'],
+        config: tailwindConfig,
+        removeDuplicates: true
+      }
+    }
+  }
 ];

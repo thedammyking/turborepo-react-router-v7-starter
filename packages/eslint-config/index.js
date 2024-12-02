@@ -9,11 +9,7 @@ import tsEslint from 'typescript-eslint';
 
 import path from 'node:path';
 
-import tailwind from 'eslint-plugin-tailwindcss';
-
 const project = path.resolve(process.cwd(), 'tsconfig.json');
-
-const tailwindConfig = path.resolve(process.cwd(), 'tailwind.config.ts');
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -155,18 +151,6 @@ export default [
         node: {
           extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx']
         }
-      }
-    }
-  },
-
-  // Tailwind
-  ...tailwind.configs['flat/recommended'],
-  {
-    settings: {
-      tailwindcss: {
-        callees: ['cn', 'classnames', 'clsx', 'ctl'],
-        config: tailwindConfig,
-        removeDuplicates: true
       }
     }
   },
