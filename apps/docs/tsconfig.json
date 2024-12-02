@@ -1,4 +1,23 @@
 {
-  "extends": "@repo/typescript-config/vite",
-  "include": ["src"]
+  "extends": "@repo/typescript-config/react",
+  "compilerOptions": {
+    "types": ["react", "vite/client"],
+    "rootDirs": [".", "./.react-router/types"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "vite.config.ts",
+    "src",
+    "netlify",
+    ".eslintrc.config.js",
+    ".react-router/types/**/*",
+    "vite-env.d.ts",
+    "server",
+    "react-router.config.ts",
+    "tailwind.config.ts"
+  ],
+  "exclude": ["build", "node_modules", ".netlify", ".react-router", "public"]
 }
