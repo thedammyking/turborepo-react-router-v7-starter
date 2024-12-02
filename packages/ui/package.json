@@ -8,7 +8,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"**/*.ts\"",
+    "lint": "run-s eslint stylelint",
+    "eslint": "eslint '**/*.{js,ts,jsx,tsx}' --fix",
+    "stylelint": "stylelint '**/*.{css,scss}' --fix",
     "format": "prettier --write ."
   },
   "devDependencies": {
@@ -16,7 +18,9 @@
     "@repo/prettier-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "eslint": "^9.16.0",
+    "npm-run-all2": "^7.0.1",
     "prettier": "^3.4.1",
+    "stylelint": "^16.11.0",
     "typescript": "5.7.2"
   }
 }
