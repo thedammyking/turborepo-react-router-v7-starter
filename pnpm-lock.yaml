@@ -302,6 +302,22 @@ importers:
         specifier: ^3.4.15
         version: 3.4.15
 
+  packages/tailwind-utils:
+    dependencies:
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      tailwind-merge:
+        specifier: ^2.5.5
+        version: 2.5.5
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+
   packages/typescript-config: {}
 
   packages/ui:
@@ -331,6 +347,9 @@ importers:
       '@repo/tailwind-config':
         specifier: workspace:*
         version: link:../tailwind-config
+      '@repo/tailwind-utils':
+        specifier: workspace:*
+        version: link:../tailwind-utils
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
