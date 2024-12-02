@@ -1,8 +1,5 @@
 {
-	"{apps,packages}/**/*.{js,ts,jsx,tsx}": [
-		"eslint --fix --quiet",
-		"prettier --write"
-	],
-	"{apps,packages}/**/*.{css,scss}": ["stylelint --fix", "prettier --write"],
-	"{apps,packages}/**/*.{json,md,toml}": ["prettier --write"]
+  "{apps,packages}/**/*.{js,ts,jsx,tsx}": ["eslint --fix --quiet", "prettier --write"],
+  "{apps,packages}/**/*.{css,scss}": ["stylelint --fix", "prettier --write"],
+  "{apps,packages}/**/*.{json,md,toml}": ["prettier --write"]
 }
