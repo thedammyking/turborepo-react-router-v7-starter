@@ -1,2 +1,7 @@
 node_modules
-.turbo
+# Ignore artifacts:
+build
+coverage
+.netlify
+.react-router
+tsconfig.tsbuildinfo

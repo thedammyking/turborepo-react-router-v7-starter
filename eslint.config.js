@@ -1,4 +1,9 @@
 import eslintConfig from '@repo/eslint-config';
 
 /** @type {import("eslint").Linter.Config} */
-export default [...eslintConfig];
+export default [
+  {
+    ignores: ['packages/**', 'apps/**']
+  },
+  ...eslintConfig
+];

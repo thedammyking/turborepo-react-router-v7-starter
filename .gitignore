@@ -9,3 +9,11 @@ dist-ssr
 .cache
 server/dist
 public/dist
+.env
+!.env.example
+.react-router
+build
+*.tsbuildinfo
+
+# Netlify specific
+.netlify

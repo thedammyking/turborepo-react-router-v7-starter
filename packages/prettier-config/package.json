@@ -1,16 +1,20 @@
 {
-	"name": "@repo/prettier-config",
-	"version": "0.0.0",
-	"main": "index.js",
-	"license": "MIT",
-	"type": "module",
-	"exports": {
-		".": "./index.js"
-	},
-	"peerDependencies": {
-		"prettier": ">=3.0.0"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@repo/prettier-config",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "prettier-plugin-toml": "^2.0.1"
+  },
+  "peerDependencies": {
+    "prettier": ">=3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
