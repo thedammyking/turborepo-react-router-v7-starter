@@ -1,3 +1,5 @@
+import Button from '@repo/ui/button';
+
 import { ReactRouterLogoDark, ReactRouterLogoLight } from '../assets/svgs';
 
 const resources = [
@@ -75,6 +77,7 @@ export function Welcome({ message }: { message: string }) {
             </ul>
           </nav>
         </div>
+        <Button size='lg'>Click me</Button>
       </div>
     </main>
   );

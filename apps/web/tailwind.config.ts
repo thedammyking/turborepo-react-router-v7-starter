@@ -1,9 +1,13 @@
 import sharedConfig from '@repo/tailwind-config';
 import type { Config } from 'tailwindcss';
+import tailwindcssAnimate from 'tailwindcss-animate';
 
 export default {
   presets: [sharedConfig],
-  content: ['./src/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './src/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}',
+    '../../packages/ui/src/**/*.{js,jsx,ts,tsx}'
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -20,5 +24,5 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: [tailwindcssAnimate]
 } satisfies Config;
