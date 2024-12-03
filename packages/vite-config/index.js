@@ -55,23 +55,13 @@ export default ({
       }),
       isTest ? react() : reactRouter(),
       tsconfigPaths(),
-      !isTest
-        ? svgr({
-            typescript: true,
-            prettier: false,
-            svgo: false,
-            titleProp: true,
-            ref: true
-          })
-        : {
-            name: 'load-svg',
-            enforce: 'pre',
-            transform(_, id) {
-              if (id.endsWith('.svg')) {
-                return 'export default () => {}';
-              }
-            }
-          },
+      svgr({
+        typescript: true,
+        prettier: false,
+        svgo: false,
+        titleProp: true,
+        ref: true
+      }),
       isTest
         ? AutoImport({
             imports: ['vitest'],
