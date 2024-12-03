@@ -1,10 +1,7 @@
 [build]
+base = "apps/web"
+publish = "build/client"
 command = "pnpm build --filter=web"
-publish = "apps/web/build/client"
-framework = "vite"
-
-[dev]
-command = "pnpm dev --filter=web"
 framework = "vite"
 
 # Set immutable caching for static files, because they have fingerprinted filenames
