@@ -10,7 +10,7 @@ import tailwindcss from 'tailwindcss';
 
 export default ({
   env: { isSsrBuild = false, mode },
-  ssrInput,
+  ssrInput = '',
   lintCommand,
   testSetupFiles = ''
 }) => {
