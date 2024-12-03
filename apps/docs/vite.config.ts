@@ -1,4 +1,3 @@
-/// <reference types="vitest/config" />
 import sharedConfig from '@repo/vite-config';
 import path from 'path';
 import { defineConfig, mergeConfig } from 'vite';

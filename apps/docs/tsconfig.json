@@ -1,7 +1,7 @@
 {
   "extends": "@repo/typescript-config/react",
   "compilerOptions": {
-    "types": ["react", "vite/client"],
+    "types": ["react", "vite/client", "vite/types/importMeta.d.ts", "vitest/config"],
     "rootDirs": [".", "./.react-router/types"],
     "baseUrl": ".",
     "paths": {
@@ -14,7 +14,6 @@
     "netlify",
     ".eslintrc.config.js",
     ".react-router/types/**/*",
-    "vite-env.d.ts",
     "server",
     "react-router.config.ts",
     "tailwind.config.ts"
