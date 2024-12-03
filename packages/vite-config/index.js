@@ -15,7 +15,7 @@ export default ({
   lintCommand,
   testSetupFiles = ''
 }) => {
-  const isTest = !!testSetupFiles;
+  const isTest = mode === 'test';
   const isProduction = mode === 'production';
   return {
     build: {
@@ -29,7 +29,6 @@ export default ({
         treeshake: isProduction
       }
     },
-
     define: {
       global: 'window'
     },
@@ -56,7 +55,7 @@ export default ({
       }),
       isTest ? react() : reactRouter(),
       tsconfigPaths(),
-      isTest
+      !isTest
         ? svgr({
             typescript: true,
             prettier: false,
