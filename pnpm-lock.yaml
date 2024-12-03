@@ -48,7 +48,7 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
       isbot:
-        specifier: ^5.1.17
+        specifier: ^5
         version: 5.1.17
       react:
         specifier: ^18.3.1
@@ -60,12 +60,9 @@ importers:
         specifier: ^7.0.1
         version: 7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
-      '@mjackson/node-fetch-server':
-        specifier: 0.3.0
-        version: 0.3.0
       '@react-router/dev':
         specifier: ^7.0.1
-        version: 7.0.1(@types/node@22.10.1)(react-router@7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(sass@1.81.0)(terser@5.36.0)(typescript@5.7.2)(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1))
+        version: 7.0.1(@types/node@22.10.1)(react-router@7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(sass@1.81.0)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0))
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -78,9 +75,9 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      '@svgr/rollup':
-        specifier: ^8.1.0
-        version: 8.1.0(rollup@4.28.0)(typescript@5.7.2)
+      '@repo/vite-config':
+        specifier: workspace:*
+        version: link:../../packages/vite-config
       '@testing-library/dom':
         specifier: ^10.4.0
         version: 10.4.0
@@ -99,12 +96,6 @@ importers:
       '@types/react-dom':
         specifier: ^18.3.1
         version: 18.3.1
-      autoprefixer:
-        specifier: ^10.4.20
-        version: 10.4.20(postcss@8.4.49)
-      cross-env:
-        specifier: ^7.0.3
-        version: 7.0.3
       express:
         specifier: ^4.21.1
         version: 4.21.1
@@ -114,18 +105,12 @@ importers:
       npm-run-all2:
         specifier: ^7.0.1
         version: 7.0.1
-      postcss:
-        specifier: ^8.4.49
-        version: 8.4.49
       sass:
         specifier: ^1.81.0
         version: 1.81.0
       tailwindcss:
         specifier: ^3.4.15
         version: 3.4.15
-      tailwindcss-animate:
-        specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.4.15)
       terser:
         specifier: ^5.36.0
         version: 5.36.0
@@ -133,14 +118,8 @@ importers:
         specifier: ^5.6.3
         version: 5.7.2
       vite:
-        specifier: ^6.0.1
-        version: 6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1)
-      vite-plugin-checker:
-        specifier: ^0.8.0
-        version: 0.8.0(eslint@9.16.0(jiti@1.21.6))(optionator@0.9.3)(stylelint@16.11.0(typescript@5.7.2))(typescript@5.7.2)(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1))
-      vite-tsconfig-paths:
-        specifier: ^5.1.2
-        version: 5.1.3(typescript@5.7.2)(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1))
+        specifier: ^5.4.11
+        version: 5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)
       vitest:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@22.10.1)(jsdom@25.0.1)(sass@1.81.0)(terser@5.36.0)
@@ -156,9 +135,6 @@ importers:
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      isbot:
-        specifier: ^5.1.17
-        version: 5.1.17
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -169,12 +145,9 @@ importers:
         specifier: ^7.0.1
         version: 7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
-      '@mjackson/node-fetch-server':
-        specifier: 0.3.0
-        version: 0.3.0
       '@react-router/dev':
         specifier: ^7.0.1
-        version: 7.0.1(@types/node@22.10.1)(react-router@7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(sass@1.81.0)(terser@5.36.0)(typescript@5.7.2)(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1))
+        version: 7.0.1(@types/node@22.10.1)(react-router@7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(sass@1.81.0)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0))
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -187,9 +160,9 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      '@svgr/rollup':
-        specifier: ^8.1.0
-        version: 8.1.0(rollup@4.28.0)(typescript@5.7.2)
+      '@repo/vite-config':
+        specifier: workspace:*
+        version: link:../../packages/vite-config
       '@testing-library/dom':
         specifier: ^10.4.0
         version: 10.4.0
@@ -208,12 +181,6 @@ importers:
       '@types/react-dom':
         specifier: ^18.3.1
         version: 18.3.1
-      autoprefixer:
-        specifier: ^10.4.20
-        version: 10.4.20(postcss@8.4.49)
-      cross-env:
-        specifier: ^7.0.3
-        version: 7.0.3
       express:
         specifier: ^4.21.1
         version: 4.21.1
@@ -223,18 +190,12 @@ importers:
       npm-run-all2:
         specifier: ^7.0.1
         version: 7.0.1
-      postcss:
-        specifier: ^8.4.49
-        version: 8.4.49
       sass:
         specifier: ^1.81.0
         version: 1.81.0
       tailwindcss:
         specifier: ^3.4.15
         version: 3.4.15
-      tailwindcss-animate:
-        specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.4.15)
       terser:
         specifier: ^5.36.0
         version: 5.36.0
@@ -242,14 +203,8 @@ importers:
         specifier: ^5.6.3
         version: 5.7.2
       vite:
-        specifier: ^6.0.1
-        version: 6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1)
-      vite-plugin-checker:
-        specifier: ^0.8.0
-        version: 0.8.0(eslint@9.16.0(jiti@1.21.6))(optionator@0.9.3)(stylelint@16.11.0(typescript@5.7.2))(typescript@5.7.2)(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1))
-      vite-tsconfig-paths:
-        specifier: ^5.1.2
-        version: 5.1.3(typescript@5.7.2)(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1))
+        specifier: ^5.4.11
+        version: 5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)
       vitest:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@22.10.1)(jsdom@25.0.1)(sass@1.81.0)(terser@5.36.0)
@@ -350,7 +305,7 @@ importers:
         version: 1.1.0(@types/react@18.3.12)(react@18.3.1)
       '@vitejs/plugin-react':
         specifier: ^4.3.4
-        version: 4.3.4(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0))
+        version: 4.3.4(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1))
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -406,6 +361,46 @@ importers:
       typescript:
         specifier: 5.7.2
         version: 5.7.2
+      vitest:
+        specifier: ^2.1.8
+        version: 2.1.8(@types/node@22.10.1)(jsdom@25.0.1)(sass@1.81.0)(terser@5.36.0)
+
+  packages/vite-config:
+    dependencies:
+      terser:
+        specifier: '>=5.36.0'
+        version: 5.36.0
+    devDependencies:
+      '@react-router/dev':
+        specifier: ^7.0.1
+        version: 7.0.1(@types/node@22.10.1)(react-router@7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(sass@1.81.0)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0))
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      '@svgr/rollup':
+        specifier: ^8.1.0
+        version: 8.1.0(rollup@4.28.0)(typescript@5.7.2)
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.49)
+      tailwindcss:
+        specifier: ^3.4.15
+        version: 3.4.15
+      typescript:
+        specifier: ^5.6.3
+        version: 5.7.2
+      vite:
+        specifier: ^5.4.11
+        version: 5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)
+      vite-plugin-checker:
+        specifier: ^0.8.0
+        version: 0.8.0(eslint@9.16.0(jiti@1.21.6))(optionator@0.9.3)(stylelint@16.11.0(typescript@5.7.2))(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0))
+      vite-tsconfig-paths:
+        specifier: ^5.1.2
+        version: 5.1.3(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0))
       vitest:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@22.10.1)(jsdom@25.0.1)(sass@1.81.0)(terser@5.36.0)
@@ -1458,9 +1453,6 @@ packages:
   '@mjackson/node-fetch-server@0.2.0':
     resolution: {integrity: sha512-EMlH1e30yzmTpGLQjlFmaDAjyOeZhng1/XCd7DExR8PNAnG/G1tyruZxEoUe11ClnwGhGrtsdnyyUx1frSzjng==}
 
-  '@mjackson/node-fetch-server@0.3.0':
-    resolution: {integrity: sha512-p+wzVVjYI6pi+t9hRMZngfwywE4CaPu3ZuYkB3+fkS1bSPAxZikXeIdeuOTiy5oqltOOODG0hoe55FR2PRmF/A==}
-
   '@netlify/functions@2.8.2':
     resolution: {integrity: sha512-DeoAQh8LuNPvBE4qsKlezjKj0PyXDryOFJfJKo3Z1qZLKzQ21sT314KQKPVjfvw6knqijj+IO+0kHXy/TJiqNA==}
     engines: {node: '>=14.0.0'}
@@ -2396,11 +2388,6 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
-
-  cross-env@7.0.3:
-    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
-    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
-    hasBin: true
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -6158,8 +6145,6 @@ snapshots:
 
   '@mjackson/node-fetch-server@0.2.0': {}
 
-  '@mjackson/node-fetch-server@0.3.0': {}
-
   '@netlify/functions@2.8.2':
     dependencies:
       '@netlify/serverless-functions-api': 1.26.1
@@ -6291,7 +6276,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.12
 
-  '@react-router/dev@7.0.1(@types/node@22.10.1)(react-router@7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(sass@1.81.0)(terser@5.36.0)(typescript@5.7.2)(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1))':
+  '@react-router/dev@7.0.1(@types/node@22.10.1)(react-router@7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(sass@1.81.0)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0))':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/generator': 7.26.2
@@ -6322,7 +6307,7 @@ snapshots:
       semver: 7.6.3
       set-cookie-parser: 2.7.1
       valibot: 0.41.0(typescript@5.7.2)
-      vite: 6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1)
+      vite: 5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)
       vite-node: 1.6.0(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)
     optionalDependencies:
       typescript: 5.7.2
@@ -6711,14 +6696,14 @@ snapshots:
       '@typescript-eslint/types': 8.16.0
       eslint-visitor-keys: 4.2.0
 
-  '@vitejs/plugin-react@4.3.4(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0))':
+  '@vitejs/plugin-react@4.3.4(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1))':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.0)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.0)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)
+      vite: 6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -7175,10 +7160,6 @@ snapshots:
       parse-json: 5.2.0
     optionalDependencies:
       typescript: 5.7.2
-
-  cross-env@7.0.3:
-    dependencies:
-      cross-spawn: 7.0.6
 
   cross-spawn@7.0.6:
     dependencies:
@@ -9680,7 +9661,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-checker@0.8.0(eslint@9.16.0(jiti@1.21.6))(optionator@0.9.3)(stylelint@16.11.0(typescript@5.7.2))(typescript@5.7.2)(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1)):
+  vite-plugin-checker@0.8.0(eslint@9.16.0(jiti@1.21.6))(optionator@0.9.3)(stylelint@16.11.0(typescript@5.7.2))(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)):
     dependencies:
       '@babel/code-frame': 7.26.2
       ansi-escapes: 4.3.2
@@ -9692,7 +9673,7 @@ snapshots:
       npm-run-path: 4.0.1
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.3
-      vite: 6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1)
+      vite: 5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.12
@@ -9703,13 +9684,13 @@ snapshots:
       stylelint: 16.11.0(typescript@5.7.2)
       typescript: 5.7.2
 
-  vite-tsconfig-paths@5.1.3(typescript@5.7.2)(vite@6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1)):
+  vite-tsconfig-paths@5.1.3(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)):
     dependencies:
       debug: 4.3.7
       globrex: 0.1.2
       tsconfck: 3.1.4(typescript@5.7.2)
     optionalDependencies:
-      vite: 6.0.1(@types/node@22.10.1)(jiti@1.21.6)(sass@1.81.0)(terser@5.36.0)(yaml@2.6.1)
+      vite: 5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)
     transitivePeerDependencies:
       - supports-color
       - typescript

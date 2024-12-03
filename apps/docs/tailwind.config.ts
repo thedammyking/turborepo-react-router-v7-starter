@@ -1,6 +1,5 @@
 import sharedConfig from '@repo/tailwind-config';
 import type { Config } from 'tailwindcss';
-import tailwindcssAnimate from 'tailwindcss-animate';
 
 export default {
   presets: [sharedConfig],
@@ -23,6 +22,5 @@ export default {
         ]
       }
     }
-  },
-  plugins: [tailwindcssAnimate]
+  }
 } satisfies Config;

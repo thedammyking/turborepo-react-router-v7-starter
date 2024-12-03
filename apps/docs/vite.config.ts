@@ -1,75 +1,25 @@
 /// <reference types="vitest/config" />
-import { reactRouter } from '@react-router/dev/vite';
-import svgr from '@svgr/rollup';
-import autoprefixer from 'autoprefixer';
+import sharedConfig from '@repo/vite-config';
 import path from 'path';
-import { defineConfig } from 'vite';
-// eslint-disable-next-line import-x/no-named-as-default
-import checker from 'vite-plugin-checker';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import { defineConfig, mergeConfig } from 'vite';
 
-import tailwindcss from 'tailwindcss';
-
-export default defineConfig(({ isSsrBuild, mode }) => {
-  const isProduction = mode === 'production';
-  return {
-    build: {
-      cssMinify: isProduction,
-      minify: isProduction ? 'terser' : false,
-      rollupOptions: {
-        input: isSsrBuild ? './server/app.ts' : undefined,
-        output: {
-          manualChunks: {}
-        },
-        treeshake: isProduction
-      }
-    },
-
-    define: {
-      global: 'window'
-    },
-    css: {
-      postcss: {
-        plugins: [tailwindcss, autoprefixer]
+export default defineConfig(configEnv =>
+  mergeConfig(
+    sharedConfig({
+      env: configEnv,
+      lintCommand: 'eslint "./src/**/*.{ts,tsx}"',
+      ssrInput: './server/app.ts'
+    }),
+    {
+      resolve: {
+        alias: {
+          '@': path.resolve(__dirname, './src')
+        }
       },
-      preprocessorOptions: {
-        scss: {
-          api: 'modern-compiler'
-        }
+      test: {
+        environment: 'jsdom'
       }
     },
-    plugins: [
-      checker({
-        typescript: true,
-        eslint: {
-          useFlatConfig: true,
-          lintCommand: 'eslint "./src/**/*.{ts,tsx}"'
-        },
-        overlay: {
-          initialIsOpen: false
-        }
-      }),
-      reactRouter(),
-      tsconfigPaths(),
-      svgr({
-        typescript: true,
-        prettier: false,
-        svgo: false,
-        titleProp: true,
-        ref: true
-      })
-    ],
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, './src')
-      }
-    },
-    server: {
-      port: 3000,
-      open: true
-    },
-    test: {
-      environment: 'jsdom'
-    }
-  };
-});
+    false
+  )
+);
