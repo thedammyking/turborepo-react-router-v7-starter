@@ -4,6 +4,9 @@ publish = "build/client"
 command = "pnpm build"
 framework = "vite"
 
+[functions]
+directory = ".netlify/functions-internal"
+
 # Set immutable caching for static files, because they have fingerprinted filenames
 
 [[headers]]
