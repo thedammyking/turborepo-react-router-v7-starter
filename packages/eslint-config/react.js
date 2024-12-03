@@ -3,7 +3,7 @@ import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 
-import defaultConfig from '.';
+import defaultConfig from './index.js';
 
 import tailwind from 'eslint-plugin-tailwindcss';
 
@@ -78,6 +78,9 @@ export default [
   // Tailwind
   ...tailwind.configs['flat/recommended'],
   {
+    rules: {
+      'tailwindcss/no-custom-classname': 'off'
+    },
     settings: {
       tailwindcss: {
         callees: ['cn', 'classnames', 'clsx', 'ctl'],

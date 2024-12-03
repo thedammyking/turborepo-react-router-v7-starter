@@ -1,7 +1,7 @@
-import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react-swc';
-import AutoImport from 'unplugin-auto-import/vite';
 import path from 'path';
+import AutoImport from 'unplugin-auto-import/vite';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   plugins: [
