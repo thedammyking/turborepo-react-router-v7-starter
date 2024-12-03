@@ -13,6 +13,7 @@ public/dist
 !.env.example
 .react-router
 build
+auto-imports.d.ts
 *.tsbuildinfo
 
 # Netlify specific
