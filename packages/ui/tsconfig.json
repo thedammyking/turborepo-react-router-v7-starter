@@ -2,7 +2,10 @@
   "extends": "@repo/typescript-config/react",
   "compilerOptions": {
     "types": ["react"],
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"],
   "exclude": [".turbo", "node_modules"]

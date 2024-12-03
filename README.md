@@ -23,7 +23,6 @@ This Turborepo includes the following packages and apps:
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 - `@repo/prettier-config`: shared `prettier` configuration
 - `@repo/stylelint-config`: shared `stylelint` configuration
-- `@repo/tailwind-utils`: utility functions for Tailwind CSS
 - `@repo/tailwind-config`: shared Tailwind CSS configuration
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
@@ -41,3 +40,4 @@ This Turborepo has some additional tools already setup for you:
 - [Lint-staged](https://github.com/okonet/lint-staged) for running linters on Git staged files
 - [Commitlint](https://commitlint.js.org/) for commit message linting
 - [Netlify](https://www.netlify.com/) for deployment
+- [Shadcn UI](https://ui.shadcn.com/) for UI components

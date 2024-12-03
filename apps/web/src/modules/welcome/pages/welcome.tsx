@@ -77,7 +77,9 @@ export function Welcome({ message }: { message: string }) {
             </ul>
           </nav>
         </div>
-        <Button size='lg'>Click me</Button>
+        <Button variant='secondary' size='lg'>
+          Button from @repo/ui
+        </Button>
       </div>
     </main>
   );
