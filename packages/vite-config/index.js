@@ -1,5 +1,6 @@
 import { reactRouter } from '@react-router/dev/vite';
 import svgr from '@svgr/rollup';
+import react from '@vitejs/plugin-react-swc';
 import autoprefixer from 'autoprefixer';
 import AutoImport from 'unplugin-auto-import/vite';
 // eslint-disable-next-line import-x/no-named-as-default
@@ -14,6 +15,7 @@ export default ({
   lintCommand,
   testSetupFiles = ''
 }) => {
+  const isTest = !!testSetupFiles;
   const isProduction = mode === 'production';
   return {
     build: {
@@ -52,40 +54,48 @@ export default ({
           initialIsOpen: false
         }
       }),
-      reactRouter(),
+      isTest ? react() : reactRouter(),
       tsconfigPaths(),
-      svgr({
-        typescript: true,
-        prettier: false,
-        svgo: false,
-        titleProp: true,
-        ref: true
-      }),
-      testSetupFiles
+      isTest
+        ? svgr({
+            typescript: true,
+            prettier: false,
+            svgo: false,
+            titleProp: true,
+            ref: true
+          })
+        : {
+            name: 'load-svg',
+            enforce: 'pre',
+            transform(_, id) {
+              if (id.endsWith('.svg')) {
+                return 'export default () => {}';
+              }
+            }
+          },
+      isTest
         ? AutoImport({
             imports: ['vitest'],
             dts: true
           })
-        : {}
+        : null
     ],
+    test: {
+      exclude: ['**/node_modules/**', '**/dist/**', '**/build/**'],
+      include: ['**/__tests__/**/*.test.{js,ts,tsx}'],
+      setupFiles: testSetupFiles,
+      environment: 'jsdom',
+      globals: true,
+      update: true,
+      clearMocks: true,
+      typecheck: {
+        tsconfig: './tsconfig.json',
+        enabled: true
+      }
+    },
     server: {
       port: 3000,
       open: true
-    },
-    test: testSetupFiles
-      ? {
-          exclude: ['**/node_modules/**', '**/dist/**', '**/build/**'],
-          include: ['**/__tests__/**/*.test.{js,ts,tsx}'],
-          setupFiles: testSetupFiles,
-          environment: 'jsdom',
-          globals: true,
-          update: true,
-          clearMocks: true,
-          typecheck: {
-            tsconfig: './tsconfig.json',
-            enabled: true
-          }
-        }
-      : undefined
+    }
   };
 };
