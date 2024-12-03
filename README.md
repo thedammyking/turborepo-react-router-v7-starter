@@ -24,6 +24,7 @@ This Turborepo includes the following packages and apps:
 - `@repo/prettier-config`: shared `prettier` configuration
 - `@repo/stylelint-config`: shared `stylelint` configuration
 - `@repo/tailwind-config`: shared Tailwind CSS configuration
+- `@repo/vite-config`: shared Vite configuration
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -41,3 +42,4 @@ This Turborepo has some additional tools already setup for you:
 - [Commitlint](https://commitlint.js.org/) for commit message linting
 - [Netlify](https://www.netlify.com/) for deployment
 - [Shadcn UI](https://ui.shadcn.com/) for UI components
+- [Vitest](https://vitest.dev/) for testing
