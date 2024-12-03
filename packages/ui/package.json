@@ -9,6 +9,7 @@
     "./utils": "./src/lib/utils.ts"
   },
   "scripts": {
+    "shadcn": "pnpm dlx shadcn@latest",
     "test": "vitest",
     "test:watch": "vitest --watch",
     "lint": "run-s eslint stylelint",

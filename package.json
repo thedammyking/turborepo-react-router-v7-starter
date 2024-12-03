@@ -11,7 +11,8 @@
     "test:watch": "turbo run test:watch",
     "lint": "turbo lint",
     "format": "turbo format",
-    "prepare": "husky"
+    "prepare": "husky",
+    "ui": "pnpm --filter=ui shadcn"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
