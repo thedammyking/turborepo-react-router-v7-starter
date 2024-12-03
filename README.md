@@ -9,6 +9,7 @@ Run the following command:
 ```sh
 pnpm dlx create-turbo@latest -e https://github.com/thedammyking/turborepo-react-router-v7-starter
 ```
+You can use other package managers like `npm` and `yarn` or just clone the repo and install the dependencies.
 
 ## What's inside?
 
