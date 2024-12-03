@@ -7,6 +7,8 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
     "lint": "turbo lint",
     "format": "turbo format",
     "prepare": "husky"
@@ -19,7 +21,8 @@
     "lint-staged": "^15.2.10",
     "prettier": "^3.4.1",
     "stylelint": "^16.11.0",
-    "turbo": "^2.3.3"
+    "turbo": "^2.3.3",
+    "vitest": "^2.1.8"
   },
   "engines": {
     "node": ">=20.10.0"

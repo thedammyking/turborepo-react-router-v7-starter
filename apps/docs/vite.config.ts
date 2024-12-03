@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { reactRouter } from '@react-router/dev/vite';
 import svgr from '@svgr/rollup';
 import autoprefixer from 'autoprefixer';
@@ -66,6 +67,9 @@ export default defineConfig(({ isSsrBuild, mode }) => {
     server: {
       port: 3000,
       open: true
+    },
+    test: {
+      environment: 'jsdom'
     }
   };
 });

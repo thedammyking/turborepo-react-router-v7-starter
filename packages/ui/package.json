@@ -9,6 +9,8 @@
   },
   "license": "MIT",
   "scripts": {
+    "test": "vitest",
+    "test:watch": "vitest --watch",
     "lint": "run-s eslint stylelint",
     "eslint": "eslint '**/*.{js,ts,jsx,tsx}' --fix",
     "stylelint": "stylelint '**/*.{css,scss}' --fix",
@@ -21,15 +23,21 @@
     "@repo/stylelint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
     "@types/react": "^18.3.12",
+    "jsdom": "^25.0.1",
     "npm-run-all2": "^7.0.1",
-    "typescript": "5.7.2"
+    "typescript": "5.7.2",
+    "vitest": "^2.1.8"
   },
   "peerDependencies": {
     "react": "^18.3.1"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.464.0",

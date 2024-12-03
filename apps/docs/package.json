@@ -8,6 +8,8 @@
     "build:netlify-prepare": "node netlify/prepare.js",
     "dev": "react-router dev",
     "start": "netlify serve",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
     "typecheck": "react-router typegen && tsc --build --noEmit",
     "lint": "run-s eslint stylelint",
     "eslint": "eslint '*/**/*.{js,ts,jsx,tsx}' --fix",
@@ -30,12 +32,16 @@
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@svgr/rollup": "^8.1.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
     "@types/express": "^5.0.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.20",
     "cross-env": "^7.0.3",
     "express": "^4.21.1",
+    "jsdom": "^25.0.1",
     "npm-run-all2": "^7.0.1",
     "postcss": "^8.4.49",
     "sass": "^1.81.0",
@@ -45,7 +51,8 @@
     "typescript": "^5.6.3",
     "vite": "^6.0.1",
     "vite-plugin-checker": "^0.8.0",
-    "vite-tsconfig-paths": "^5.1.2"
+    "vite-tsconfig-paths": "^5.1.2",
+    "vitest": "^2.1.8"
   },
   "engines": {
     "node": ">=20"
