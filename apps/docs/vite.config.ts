@@ -10,13 +10,13 @@ export default defineConfig(configEnv =>
       ssrInput: './server/app.ts',
       testSetupFiles: './src/setupTest.ts'
     }),
-    {
+    defineConfig({
       resolve: {
         alias: {
           '@': path.resolve(__dirname, './src')
         }
       }
-    },
+    }),
     false
   )
 );
