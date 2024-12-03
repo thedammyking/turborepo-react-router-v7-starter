@@ -1,5 +1,5 @@
 [build]
-base = "apps/web"
+base = "apps/web/"
 publish = "build/client"
 command = "pnpm build --filter=web"
 framework = "vite"
