@@ -1,21 +1,20 @@
 {
   "name": "@repo/ui",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "exports": {
     "./styles.scss": "./src/styles/main.scss",
     "./button": "./src/components/ui/button.tsx",
     "./utils": "./src/lib/utils.ts"
   },
-  "license": "MIT",
   "scripts": {
     "test": "vitest",
     "test:watch": "vitest --watch",
     "lint": "run-s eslint stylelint",
     "eslint": "eslint '**/*.{js,ts,jsx,tsx}' --fix",
     "stylelint": "stylelint '**/*.{css,scss}' --fix",
-    "format": "prettier --write .",
-    "type-check": "tsc --noEmit"
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
@@ -35,7 +34,8 @@
     "vitest": "^2.1.8"
   },
   "peerDependencies": {
-    "react": "^18.3.1"
+    "react": ">=18.3.1",
+    "react-dom": ">=18.3.1"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
@@ -43,8 +43,6 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.464.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "tailwind-merge": "^2.5.5"
   },
   "browserslist": {

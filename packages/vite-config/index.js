@@ -1,4 +1,3 @@
-/// <reference types="vitest/config" />
 import { reactRouter } from '@react-router/dev/vite';
 import svgr from '@svgr/rollup';
 import autoprefixer from 'autoprefixer';
@@ -75,11 +74,12 @@ export default ({
     },
     test: testSetupFiles
       ? {
+          exclude: ['**/node_modules/**', '**/dist/**', '**/build/**'],
+          include: ['**/__tests__/**/*.test.{js,ts,tsx}'],
           setupFiles: testSetupFiles,
           environment: 'jsdom',
           globals: true,
           update: true,
-          dir: '**/__tests__/**/*.test.{js,ts,tsx}',
           clearMocks: true,
           typecheck: {
             tsconfig: './tsconfig.json',

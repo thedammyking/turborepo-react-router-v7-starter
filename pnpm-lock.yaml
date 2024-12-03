@@ -325,17 +325,14 @@ importers:
         specifier: ^0.464.0
         version: 0.464.0(react@18.3.1)
       react:
-        specifier: ^18.3.1
+        specifier: '>=18.3.1'
         version: 18.3.1
       react-dom:
-        specifier: ^18.3.1
+        specifier: '>=18.3.1'
         version: 18.3.1(react@18.3.1)
       tailwind-merge:
         specifier: ^2.5.5
         version: 2.5.5
-      unplugin-auto-import:
-        specifier: ^0.18.6
-        version: 0.18.6(rollup@4.28.0)
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -376,6 +373,9 @@ importers:
       typescript:
         specifier: 5.7.2
         version: 5.7.2
+      unplugin-auto-import:
+        specifier: ^0.18.6
+        version: 0.18.6(rollup@4.28.0)
       vitest:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@22.10.1)(jsdom@25.0.1)(sass@1.81.0)(terser@5.36.0)
@@ -385,9 +385,6 @@ importers:
       terser:
         specifier: '>=5.36.0'
         version: 5.36.0
-      unplugin-auto-import:
-        specifier: ^0.18.6
-        version: 0.18.6(rollup@4.28.0)
     devDependencies:
       '@react-router/dev':
         specifier: ^7.0.1
@@ -410,6 +407,9 @@ importers:
       typescript:
         specifier: ^5.6.3
         version: 5.7.2
+      unplugin-auto-import:
+        specifier: ^0.18.6
+        version: 0.18.6(rollup@4.28.0)
       vite:
         specifier: ^5.4.11
         version: 5.4.11(@types/node@22.10.1)(sass@1.81.0)(terser@5.36.0)

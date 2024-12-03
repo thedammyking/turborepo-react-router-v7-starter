@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import AutoImport from 'unplugin-auto-import/vite';
+import path from 'path';
 
 export default defineConfig({
   plugins: [
@@ -10,12 +11,18 @@ export default defineConfig({
       dts: true
     })
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  },
   test: {
+    exclude: ['**/node_modules/**', '**/dist/**', '**/build/**'],
+    include: ['**/__tests__/**/*.test.{js,ts,tsx}'],
     environment: 'jsdom',
     globals: true,
     update: true,
     setupFiles: './src/setupTest.ts',
-    dir: '**/__tests__/**/*.test.{js,ts,tsx}',
     clearMocks: true,
     typecheck: {
       tsconfig: './tsconfig.json',
