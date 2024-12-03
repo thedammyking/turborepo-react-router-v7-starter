@@ -1,0 +1,7 @@
+node_modules
+# Ignore artifacts:
+build
+coverage
+.netlify
+.react-router
+tsconfig.tsbuildinfo

@@ -8,5 +8,5 @@
     "jsx": "react-jsx",
     "types": ["react", "vite/client"]
   },
-  "include": ["src", ".eslintrc.config.js", "vite.config.ts", "vite-env.d.ts", "tailwind.config.ts"]
+  "include": ["src", "eslintrc.config.js", "vite.config.ts", "tailwind.config.ts"]
 }

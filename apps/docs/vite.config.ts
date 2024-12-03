@@ -7,16 +7,14 @@ export default defineConfig(configEnv =>
     sharedConfig({
       env: configEnv,
       lintCommand: 'eslint "./src/**/*.{ts,tsx}"',
-      ssrInput: './server/app.ts'
+      ssrInput: './server/app.ts',
+      testSetupFiles: './src/setupTest.ts'
     }),
     {
       resolve: {
         alias: {
           '@': path.resolve(__dirname, './src')
         }
-      },
-      test: {
-        environment: 'jsdom'
       }
     },
     false

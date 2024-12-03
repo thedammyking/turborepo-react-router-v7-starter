@@ -24,6 +24,6 @@
     "useDefineForClassFields": true,
     "sourceMap": true
   },
-  "include": ["src", ".eslintrc.config.js"],
+  "include": ["src", "eslintrc.config.js"],
   "exclude": ["node_modules", "public", "build", "dist"]
 }

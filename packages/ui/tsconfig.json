@@ -1,12 +1,19 @@
 {
   "extends": "@repo/typescript-config/react",
   "compilerOptions": {
-    "types": ["react"],
+    "types": [
+      "react",
+      "vitest/config",
+      "vitest/globals",
+      "vitest/jsdom",
+      "@testing-library/jest-dom"
+    ],
+    "rootDirs": ["."],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "vitest.config.ts"],
+  "include": ["src", "eslintrc.config.js", "vitest.config.ts"],
   "exclude": [".turbo", "node_modules"]
 }

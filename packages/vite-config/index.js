@@ -2,6 +2,7 @@
 import { reactRouter } from '@react-router/dev/vite';
 import svgr from '@svgr/rollup';
 import autoprefixer from 'autoprefixer';
+import AutoImport from 'unplugin-auto-import/vite';
 // eslint-disable-next-line import-x/no-named-as-default
 import checker from 'vite-plugin-checker';
 import tsconfigPaths from 'vite-tsconfig-paths';
@@ -60,14 +61,31 @@ export default ({
         svgo: false,
         titleProp: true,
         ref: true
-      })
+      }),
+      testSetupFiles
+        ? AutoImport({
+            imports: ['vitest'],
+            dts: true
+          })
+        : {}
     ],
     server: {
       port: 3000,
       open: true
     },
     test: testSetupFiles
-      ? { setupFiles: testSetupFiles, environment: 'jsdom', globals: true }
+      ? {
+          setupFiles: testSetupFiles,
+          environment: 'jsdom',
+          globals: true,
+          update: true,
+          dir: '**/__tests__/**/*.test.{js,ts,tsx}',
+          clearMocks: true,
+          typecheck: {
+            tsconfig: './tsconfig.json',
+            enabled: true
+          }
+        }
       : undefined
   };
 };

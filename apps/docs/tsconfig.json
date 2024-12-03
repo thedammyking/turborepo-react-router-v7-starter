@@ -1,7 +1,15 @@
 {
   "extends": "@repo/typescript-config/react",
   "compilerOptions": {
-    "types": ["react", "vite/client", "vite/types/importMeta.d.ts", "vitest/config"],
+    "types": [
+      "react",
+      "vite/client",
+      "vite/types/importMeta.d.ts",
+      "vitest/config",
+      "vitest/globals",
+      "vitest/jsdom",
+      "@testing-library/jest-dom"
+    ],
     "rootDirs": [".", "./.react-router/types"],
     "baseUrl": ".",
     "paths": {
@@ -12,7 +20,7 @@
     "vite.config.ts",
     "src",
     "netlify",
-    ".eslintrc.config.js",
+    "eslintrc.config.js",
     ".react-router/types/**/*",
     "server",
     "react-router.config.ts",
