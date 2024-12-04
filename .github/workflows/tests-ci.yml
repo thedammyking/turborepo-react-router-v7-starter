@@ -23,6 +23,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
+          node-version: 20
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -33,5 +34,5 @@ jobs:
         run: |
           echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
 
-      - name: Test components
+      - name: Test packages
         run: pnpm test
