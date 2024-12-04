@@ -7,8 +7,8 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "test": "turbo run test",
-    "test:watch": "turbo run test:watch",
+    "test": "turbo test",
+    "test:watch": "turbo test:watch",
     "lint": "turbo lint",
     "format": "turbo format",
     "prepare": "husky",

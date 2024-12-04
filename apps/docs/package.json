@@ -8,7 +8,7 @@
     "build:netlify-prepare": "node netlify/prepare.js",
     "dev": "react-router dev",
     "start": "netlify serve",
-    "test": "vitest",
+    "test": "vitest run",
     "test:watch": "vitest --watch",
     "typecheck": "react-router typegen && tsc --build --noEmit",
     "lint": "run-s eslint stylelint",

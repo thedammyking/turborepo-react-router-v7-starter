@@ -10,7 +10,7 @@
   },
   "scripts": {
     "shadcn": "pnpm dlx shadcn@latest",
-    "test": "vitest",
+    "test": "vitest run",
     "test:watch": "vitest --watch",
     "lint": "run-s eslint stylelint",
     "eslint": "eslint '**/*.{js,ts,jsx,tsx}' --fix",
