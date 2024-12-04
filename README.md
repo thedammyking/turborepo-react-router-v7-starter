@@ -17,8 +17,8 @@ This Turborepo includes the following packages and apps:
 
 ### Apps and Packages
 
-- `docs`: a vanilla [React Router](https://reactrouter.com/) app
-- `web`: another vanilla [React Router](https://reactrouter.com/) app
+- `docs`: a [React Router](https://reactrouter.com/) app
+- `web`: another [React Router](https://reactrouter.com/) app
 - `@repo/ui`: a stub component & utility library shared by both `web` and `docs` applications
 - `@repo/eslint-config`: shared `eslint` configurations
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
