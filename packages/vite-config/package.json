@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./index.js"
+    ".": "./index.js",
+    "./storybook": "./storybook.js"
   },
   "devDependencies": {
     "@react-router/dev": "^7.0.1",
