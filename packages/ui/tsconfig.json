@@ -1,19 +1,13 @@
 {
   "extends": "@repo/typescript-config/react",
   "compilerOptions": {
-    "types": [
-      "react",
-      "vitest/config",
-      "vitest/globals",
-      "vitest/jsdom",
-      "@testing-library/jest-dom"
-    ],
+    "types": ["react", "storybook"],
     "rootDirs": ["."],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["."],
+  "include": [".", ".storybook/*"],
   "exclude": ["node_modules", ".turbo"]
 }

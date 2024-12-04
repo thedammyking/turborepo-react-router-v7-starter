@@ -18,3 +18,4 @@ auto-imports.d.ts
 
 # Netlify specific
 .netlify
+*storybook.log
