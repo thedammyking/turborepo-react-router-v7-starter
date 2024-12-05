@@ -21,7 +21,7 @@ This Turborepo includes the following packages and apps:
 - `web`: another [React Router](https://reactrouter.com/) app
 - `@repo/ui`: a stub component & utility library shared by both `web` and `docs` applications
 - `@repo/eslint-config`: shared `eslint` configurations
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@repo/typescript-config`: shared `tsconfig.json` used throughout the monorepo
 - `@repo/prettier-config`: shared `prettier` configuration
 - `@repo/stylelint-config`: shared `stylelint` configuration
 - `@repo/tailwind-config`: shared Tailwind CSS configuration
